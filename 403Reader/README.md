@@ -1,4 +1,3 @@
-# Stuff
+# 403Reader
 
-Here are small projects that I've done either for fun or for learning.
-Feel free to use anything in here if it helps you.
+this is a program I made for reading through logs and extracting the relevant info, in this case every 403 status
