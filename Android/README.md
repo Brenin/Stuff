@@ -1,4 +1,3 @@
-# Stuff
+# Android
 
-Here are small projects that I've done either for fun or for learning.
-Feel free to use anything in here if it helps you.
+Small projects done for Android either for fun or for learning
