@@ -1,4 +1,4 @@
-# Stuff
+# SiteMapCreator
 
-Here are small projects that I've done either for fun or for learning.
-Feel free to use anything in here if it helps you.
+This program accepts a website, crawls through it to find all links (a href tags) and then crawls every link it found for additional links. 
+While it does this it creates a Sitemap in xml format.
