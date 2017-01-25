@@ -9,6 +9,7 @@ import java.net.URL;
 
 import com.lundin_pr.cotroceniOnIce.data.constants.Constants;
 import com.lundin_pr.cotroceniOnIce.data.entity.Notification;
+import com.lundin_pr.cotroceniOnIce.gui.view.error.ShowException;
 
 public class FCMSender {
 
@@ -36,9 +37,6 @@ public class FCMSender {
 			os.close();
 			
 			int responseCode = conn.getResponseCode();
-		    System.out.println("\nSending 'POST' request to URL : " + url);
-		    System.out.println("Post parameters : " + input);
-		    System.out.println("Response Code : " + responseCode);
 			
 		    BufferedReader in = new BufferedReader(new InputStreamReader(conn.getInputStream()));
 		    String inputLine;
@@ -49,15 +47,13 @@ public class FCMSender {
 		    }
 		    in.close();
 		    
-		    System.out.println(response.toString());
-		    
 		    notification.setNote("Sending 'POST' request to URL : " + url 
 		    		+ "\nPost parameters : " + input 
 		    		+ "\nResponse Code : " + responseCode
 		    		+ "\nResponse : " + response.toString());
 		    
 		} catch (IOException e) {
-			e.printStackTrace();
+			ShowException.createExceptionDialog(e);
 		}
 	}
 }
