@@ -1,3 +1,3 @@
 # Stuff
 
-Playing around woth Google sign in function
+Playing around with Google sign in
