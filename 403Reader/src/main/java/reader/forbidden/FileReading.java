@@ -21,10 +21,10 @@ public class FileReading {
 
 		CharsetDecoder dec = StandardCharsets.UTF_8.newDecoder().onMalformedInput(CodingErrorAction.REPLACE);
 		
-		String accessLog = "C://Users//erik.lundin//Downloads//PrePay//wPrepay_AccessLog_2016-11-16.txt";
+		String accessLog = "filePath";
 		Path readPath = Paths.get(accessLog);
 		
-		String testFile = "C://Users//erik.lundin//Downloads//PrePay//testing2.txt"; //Will create the file if it doesn't exist
+		String testFile = "testFile"; //Will create the file if it doesn't exist
 		Path writePath = Paths.get(testFile);
 		
 		List<String> list = new ArrayList<>();
